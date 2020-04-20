@@ -26,11 +26,11 @@ overflow-x: hidden;
 }
 
 .text-intro{
-    font-size: 130%;
+    font-size: 100%;
 }
 
 .big-text{
-    font-size: 160%;
+    font-size: 180%;
     font-weight: bold;
 }
 .strip{
@@ -40,13 +40,26 @@ overflow-x: hidden;
     color:#4294b4;
 }
 
-.image-responsive{
+.slide-con{
+    height: 50vh;
+    width: 75vh;
+    overflow: hidden;
+    display: flex;
     /* border: 1px solid red; */
-    width: 43%;
-    margin-top: -15vh;
-    margin-left: 90px;
-    margin-bottom: -110px;
+}
+
+
+
+.image-responsive{
     float: right;
+    /* border: 1px solid red; */    
+    width: initial;
+    height: inherit;
+            object-fit: fill;
+        -webkit-transition: all 0.65s;
+            -moz-transition: all 0.65s;
+            -o-transition: all 0.65s;
+            transition: all 0.65s;
 }
 
 .hrr-5 {
@@ -93,25 +106,29 @@ overflow-x: hidden;
 }
 
 .icon-con{
-    animation: bounce 2.5s ease-out 0s infinite;
+    animation: bounce 3.5s ease-out 0s infinite;
 }
 
 @-webkit-keyframes bounce {
-    0% { transform: translateY(-5px)  }
+    0% { transform: translateY(-5px) }
     50% { transform: translateY(10px) }
     100% { transform: translateY(-5px) }
 }
 
 @keyframes bounce {
-    0% { transform: translateY(-5px)  }
-    50% { transform: translateY(10px) }
-    100% { transform: translateY(-5px) }
+    0% { transform: translateY(-5px);
+    text-shadow: 3px 3px 6px black; }
+    50% { transform: translateY(10px);
+    text-shadow: none; }
+    100% { transform: translateY(-5px);
+    text-shadow: 3px 3px 6px black; }
 }
 
 
 .icon-title{
     font-weight: bold;
 }
+
 .btn{
     color: white;
     background: linear-gradient(to left, #4294b4, rgb(61, 85, 143));
@@ -130,6 +147,12 @@ overflow-x: hidden;
 }
 .con-stripped{
     background: linear-gradient(to left, #4294b4, rgb(61, 85, 143));
+}
+
+.partner-con .image-responsive{
+    width: 17vh;
+    height: 14vh;
+    /* filter: grayscale(1); */
 }
 
 .brief-cons .list-group a{
