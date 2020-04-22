@@ -56,11 +56,8 @@ overflow-x: hidden;
     width: initial;
     height: inherit;
             object-fit: fill;
-        -webkit-transition: all 0.65s;
-            -moz-transition: all 0.65s;
-            -o-transition: all 0.65s;
-            transition: all 0.65s;
 }
+ 
 
 .hrr-5 {
     border: 0;
@@ -132,12 +129,14 @@ overflow-x: hidden;
 .btn{
     color: white;
     background: linear-gradient(to left, #4294b4, rgb(61, 85, 143));
+    border: 1px solid transparent!important;
     width: 20vh;
 }
 
 .btn-white{
     color: black;
     background: white;
+    border: 1px solid transparent!important;
 }
 .btn:hover, .btn-white:hover{
     color: white;
